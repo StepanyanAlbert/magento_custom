@@ -1,0 +1,7 @@
+<?php
+$news = $block->getNewsInformation();
+?>
+<div class="mw-simplenews">
+    <?php echo $news->getBody() ?>
+    <img src="<?php echo $news->getImageUrl() ?>" alt="image">
+</div>

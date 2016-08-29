@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"    xsi:noNamespaceSchemaLocation="../../../Backend/etc/menu.xsd">
+    <menu>
+        <add id="Foo_Bar::main_menu" title="Bar News" module="Foo_Bar" sortOrder="20" resource="Foo_Bar::bar" />
+        <add id="Foo_Bar::add_news" title="Add News" module="Foo_Bar" sortOrder="1" parent="Foo_Bar::main_menu" action="bar/news/new" resource="Foo_Bar::manage_news" />
+        <add id="Foo_Bar::manage_news" title="Manage News" module="Foo_Bar" sortOrder="2" parent="Foo_Bar::main_menu" action="bar/news/index" resource="Foo_Bar::manage_news" />
+        <add id="Foo_Bar::configuration" title="Configurations" module="Foo_Bar" sortOrder="3" parent="Foo_Bar::main_menu"  action="adminhtml/system_config/edit/section/bar" resource="Foo_Bar::configuration" />
+    </menu>
+</config>

@@ -1,0 +1,33 @@
+.bar > ul {
+    list-style: none;
+    padding: 0;
+}
+.bar > ul li {
+    padding: 10px 5px;
+    margin: 0;
+    background-color: #fff;
+    border-bottom: 1px #c4c1bc solid;
+    display: inline-block;
+    width: 100%;
+}
+.bar{    border-bottom: none;
+}
+.bar-list {
+    float: left;
+    position: relative;
+    margin-left: 10px;
+    width: 100%;
+}
+.bar-list a.news-title {
+    font-weight: bold;
+}
+.bar-list a.news-title:hover {
+    text-decoration: none;
+}
+.block-bar .block-title {
+    margin: 0px 0px 20px;
+}
+.block-bar-heading {
+    font-size: 18px;
+    font-weight: 300;
+}
